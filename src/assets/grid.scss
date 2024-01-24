@@ -1,0 +1,65 @@
+@import './mixin-media.scss';
+
+$columns--phone: 4;
+$columns--tablet: 12;
+$columns--desktop: 24;
+
+.grid {
+  display: grid;
+  column-gap: 16px;
+	row-gap: 16px;
+	justify-content: center;
+	margin-top: 26px;
+
+  @include onMobile {
+    grid-template-columns: repeat($columns--phone, 1fr);
+  }
+
+  @include onTablet {
+    grid-template-columns: repeat($columns--tablet, 1fr);
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat($columns--desktop, 1fr);
+  }
+}
+
+.grid_product {
+	@include onMobile {
+    grid-column: span 4;
+  }
+
+  @include onTablet {
+    grid-column: span 4;
+  }
+
+  @include onDesktop {
+    grid-column: span 6;
+  }
+}
+
+.grid_area {
+	@include onMobile {
+		grid-column: span 4;
+	}
+	@include onTablet {
+    grid-column: span 12;
+  }
+
+  @include onDesktop {
+    grid-column: span 24;
+  }
+}
+
+.grid_filter {
+	@include onMobile {
+		grid-column: span 4;
+	}
+	@include onTablet {
+    grid-column: span 4;
+  }
+
+  @include onDesktop {
+    grid-column: span 6;
+  }
+}
