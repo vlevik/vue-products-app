@@ -18,7 +18,7 @@ const { product } = defineProps(['product'])
       <br />
       <p class="tag subtitle is-6 is-light is-info">{{ product.brand }}</p>
       <p class="subtitle is-5">{{ `${product.price} $` }}</p>
-      <RouterLink :to="`/product/${product.id}`" class="button is-link">View details</RouterLink>
+      <RouterLink :to="`/vue-products-app/product/${product.id}`" class="button is-link">View details</RouterLink>
     </div>
   </div>
 </template>
