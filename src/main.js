@@ -15,9 +15,9 @@ import ProductDetails from './components/ProductDetails.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: 'vue-products-app/', component: HomePage },
-    { path: 'vue-products-app/new', component: NewProductForm },
-    { path: 'vue-products-app/product/:id', component: ProductDetails }
+    { path: '/', component: HomePage },
+    { path: '/new', component: NewProductForm },
+    { path: '/product/:id', component: ProductDetails }
   ]
 })
 
