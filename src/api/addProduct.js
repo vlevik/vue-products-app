@@ -1,5 +1,5 @@
-import { client } from "@/httpClient";
+import { client } from '@/httpClient'
 
 export default function addProduct(newProduct) {
-	return client.post('/products/add', newProduct)
+  return client.post('/products/add', newProduct)
 }

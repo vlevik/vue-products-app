@@ -13,12 +13,12 @@ import NewProductForm from './components/NewProductForm.vue'
 import ProductDetails from './components/ProductDetails.vue'
 
 const router = createRouter({
-	history: createWebHistory(),
-	routes: [
-		{ path: '/', component: HomePage },
-		{ path: '/new', component: NewProductForm },
-		{ path: '/product/:id', component: ProductDetails },
-	]
+  history: createWebHistory(),
+  routes: [
+    { path: '/', component: HomePage },
+    { path: '/new', component: NewProductForm },
+    { path: '/product/:id', component: ProductDetails }
+  ]
 })
 
 const app = createApp(App)

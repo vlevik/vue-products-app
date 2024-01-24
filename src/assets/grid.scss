@@ -7,9 +7,9 @@ $columns--desktop: 24;
 .grid {
   display: grid;
   column-gap: 16px;
-	row-gap: 16px;
-	justify-content: center;
-	margin-top: 26px;
+  row-gap: 16px;
+  justify-content: center;
+  margin-top: 26px;
 
   @include onMobile {
     grid-template-columns: repeat($columns--phone, 1fr);
@@ -25,7 +25,7 @@ $columns--desktop: 24;
 }
 
 .grid_product {
-	@include onMobile {
+  @include onMobile {
     grid-column: span 4;
   }
 
@@ -39,10 +39,10 @@ $columns--desktop: 24;
 }
 
 .grid_area {
-	@include onMobile {
-		grid-column: span 4;
-	}
-	@include onTablet {
+  @include onMobile {
+    grid-column: span 4;
+  }
+  @include onTablet {
     grid-column: span 12;
   }
 
@@ -52,10 +52,10 @@ $columns--desktop: 24;
 }
 
 .grid_filter {
-	@include onMobile {
-		grid-column: span 4;
-	}
-	@include onTablet {
+  @include onMobile {
+    grid-column: span 4;
+  }
+  @include onTablet {
     grid-column: span 4;
   }
 
