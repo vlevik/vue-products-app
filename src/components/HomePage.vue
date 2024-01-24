@@ -73,6 +73,7 @@ watch(sortBy, () => {
 
 watchEffect(() => {
   productsToRender.value = [...filteredProducts.value].slice((page.value - 1) * 12, page.value * 12)
+	pages.value = Math.ceil(filteredProducts.value.length / 12)
 })
 
 const changePage = (pageNumber) => {
